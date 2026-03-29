@@ -18,7 +18,9 @@ Part of the Flowery ecosystem — paired with the [Flowery Rider delivery app](h
 
 ## Demo
 
-https://github.com/AhmedYousef72/e_commerce_app/raw/temp_develop/assets/demo.mp4
+[![Watch Demo](assets/screenshots/flower_e_commerce.png)](https://drive.google.com/file/d/1yd1WtJ5hG9XYRmgjmOsZhLeLANiPGqYI/view?usp=sharing)
+
+> Click the image above to watch the full demo video (Flowery customer app + Flowery Rider delivery app)
 
 ---
 
@@ -230,17 +232,33 @@ Both apps communicate in real time via **Cloud Firestore** for live order tracki
 
 ## My Contribution
 
-- Implemented the full **Notifications** feature end-to-end (data → domain → presentation)
-- Integrated 5 notification API endpoints with Clean Architecture
+I implemented 4 features end-to-end following Clean Architecture (data → domain → presentation):
+
+### 🌸 Occasion Screen — `feature/occasion-screen` · PR #7
+- Built the full occasion browsing screen with dynamic product filtering by occasion
+- Refactored from scratch to Cubit/MVI pattern + Retrofit after PR review feedback
+- Resolved multiple merge conflicts with the develop branch
+
+### 🔍 Search Screen — `feature/search-screen` · PR #35
+- Implemented real-time product search feature with live API integration
+- Handled PR review feedback and resolved conflicts with develop branch
+
+### 📦 Orders Screen — `feature/TEAM-60-orders-screen` · PR #39
+- Built orders screen with active and completed tabs
+- Added all orders API endpoints to the app endpoint constants
+- Resolved merge conflicts including categories view model test fixes
+
+### 🔔 Notifications Screen — `feature/TEAM-61-notifications-screen` · PR #41
+- Implemented full notifications feature (data → domain → presentation)
+- Integrated 5 API endpoints: get, unread count, mark read, mark all read, clear all
 - Built `NotificationsViewModel` using Cubit + MVI pattern
 - Wired navigation from Profile screen to Notifications screen
 - Added unit tests for the notifications view model
-- Added localization keys for notifications in EN and AR
+- Added localization keys in EN and AR
 
 ---
 
 <div align="center">
 
-Made with ❤️ and Flutter
-
+Made by Ahmed Yousef ✨😊
 </div>
